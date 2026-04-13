@@ -1,0 +1,119 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif
+        }
+
+        body {
+            background: black;
+            color: white;
+            line-height: 1.7;
+        }
+
+        .nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 20px 70px;
+            background: black;
+            border-bottom: 4px solid red;
+           
+        }
+
+        .nav h2 {
+            font-size: 30px;
+            letter-spacing: 2px;
+            color: red;
+            font-weight: bolder;
+        }
+
+        .nav-links a{
+            margin-left: 28px;
+            text-decoration: none;
+            color: red;
+            font-size: 14px;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 0%;
+            height: 1px;
+            background: red;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+
+        }
+
+        section {
+            padding: 70px 70px;
+        }
+
+        .section-tag {
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: red;
+            font-weight: 500;
+        }
+
+        .section-tag.center {
+            display: block;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 5000;
+            margin-bottom: 50px;
+        }
+
+        .subscribe {
+            background: var(--white);
+        }
+
+        .subscribe-form {
+            max-width: 520px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .subscribe-form input {
+            margin-bottom: 18px;
+            padding: 14px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+        }
+
+        .subscribe-form input:focus {
+            border-color: var(--Dark);
+        }
+
+        .subscribe-form button {
+            padding: 14px;
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: 0.03s;
+        }
+
+        .subscribe-form button:hover {
+            background: white;
+            color: red;
+        }
